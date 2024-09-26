@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 0 0;
+    background-color: #0B2447;
+}
+.logo{
+    margin-left: 30px;
+}
+
+.hamburger{
+    color: white;
+    display: none;
+}
+
+.logo img{
+    width: 70px;
+    border: 2px #0B2447 solid;
+    border-radius: 200px;
+    object-fit: contain;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-right: 50px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    
+} 
+/* main */
+
+.main-container{
+    width: 100%;
+    background-image: url('/assets/media/img/cybersports-gamers-playing-online-games-2022-08-25-19-08-12-utc.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.top{
+    height: 50%;
+    width: 100%;
+    padding: 100px 0;
+    /* text-align: center; */
+}
+.top .text{
+    width: 30%;
+    display: flex;
+    align-items: start;
+    margin-left: 200px;
+    flex-direction: column;
+}
+.text h1{
+    font-size: 28px;
+}
+.text h3{
+    margin: 20px 0;
+    font-size: 22px;   
+}
+.but{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #0B2447;
+    border: 2px #0B2447 solid;
+    border-radius: 20px;
+    transition: 500ms ease-in-out;
+}
+
+
+
+
+.bot{
+    height: 50%;
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inside-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.text2 h1{
+    font-size: 28px;
+}
+.text2 h3{
+    margin: 20px 0;
+    font-size: 22px;   
+}
+.inside-text h3{
+    text-align: start;
+}
+
+.img img{
+    
+    width: 400px;
+    object-fit: contain;
+}
+
+footer{
+    background-color: #0b2447;
+    display: flex;
+    color: white;
+    justify-content: left;
+    align-items: center;
+    height: 250px;
+}
+
+.textFoot h1{
+    margin: 20px 0;
+    font-size: 48px;
+    padding-left: 100px;
+    margin-top: 20px;
+    
+}
+
+.InsideText h2{
+    font-size: 20px;
+    padding-left: 100px;
+    color: white;
+}
+.InsideText h1{
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 450px;
+}
+
+@media (width<= 768px){
+    .hamburger{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-right: 40px;
+        width: 100%;
+    }
+    .navbar{
+        display: none;
+    }
+    
+    .sticky{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        height: 15rem;
+        padding-bottom: 10px;
+        top: 50px;
+        background-color: #0B2447;
+        z-index: 0;
+    }   
+    .sticky a{
+        color: white;
+        text-decoration: none;
+    }
+    .hamburger i{
+        font-size: 24px;
+    }
+    .text{
+        height: 100%;
+        text-align: justify;
+        margin-left: 12px;
+        padding-top: 25px;
+        flex-wrap: wrap;
+    }
+    
+    .title h1{
+        margin: 20px 0;
+        font-size: 28px;
+        padding-left: 100px;
+        padding-bottom: 50px;
+    }
+    .text h1{
+        font-size: 20px;
+        height: 100%;
+        width: 90%;
+      
+    }
+    .text h2{
+        font-size: 14px;
+        height: 100%;
+        width: 90%;
+    }
+    
+    .img img{
+        float: left;
+        margin-left: 100px;
+        width: 200px;
+        object-fit: contain;
+    }
+    .bot{
+        height: 50%;
+        padding: 100px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .text2{
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        margin-left: 12px;
+        padding-top: 12px;
+    }
+   
+    
+    .text2 h1{
+        font-size: 20px;
+        height: 100%;
+        width: 90%;
+      
+    }
+    .text2 h2{
+        font-size: 14px;
+        height: 100%;
+        width: 90%;
+    }
+    
+    .img img{
+        float: left;
+        margin-left: 100px;
+        width: 200px;
+        object-fit: contain;
+    }
+    footer{
+        background-color: #0b2447;
+        display: flex;
+        color: white;
+        justify-content: left;
+        align-items: center;
+        height: 250px;
+    }
+    
+    .textFoot h1{
+        margin: 20px 0;
+        font-size: 24px;
+        padding-left: 100px;
+        margin-top: 20px;
+        
+    }
+    
+    .InsideText h2{
+        font-size: 15px;
+        padding-left: 100px;
+        color: white;
+    }
+    .InsideText h1{
+        font-size: 20px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    
+
+}
